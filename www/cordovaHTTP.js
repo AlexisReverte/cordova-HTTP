@@ -28,6 +28,9 @@ var http = {
     put: function(url, params, headers, success, failure) {
         return exec(success, failure, "CordovaHttpPlugin", "put", [url, params, headers]);
     },
+    putJson: function(url, json, headers, success, failure) {
+        return exec(success, failure, "CordovaHttpPlugin", "putJson", [url, json, headers]);
+    },
     get: function(url, params, headers, success, failure) {
         return exec(success, failure, "CordovaHttpPlugin", "get", [url, params, headers]);
     },
